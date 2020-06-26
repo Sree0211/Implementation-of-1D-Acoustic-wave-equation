@@ -4,14 +4,15 @@ import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib import gridspec
 
-xmax = 10000
-nx = 10000
-dx = xmax/nx
-c0 = 334
-isrc = int(nx/2)
+xmax = 10000                            # number of grid points in x-direction
+nx = 10000                              # physical domain (m)
+dx = xmax/nx                            # grid point distance in x-direction
+c0 = 334                                # wave speed in medium (m/s)
+isrc = int(nx/2)                        # source location in grid in x-direction
 #ir = isrc + 100
-nt = 1001
-dt = 0.001
+nt = 1001                               # maximum number of time steps
+dt = 0.001                               # time step
+
 
 f0 = 25
 t0 = 4/f0
